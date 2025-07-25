@@ -11,7 +11,6 @@ export function PortfolioLayout({ children }: PortfolioLayoutProps) {
   return (
     <SidebarProvider defaultOpen={true}>
       <div className="min-h-screen flex w-full bg-background">
-        {/* Mobile Header */}
         <motion.header 
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,10 +28,8 @@ export function PortfolioLayout({ children }: PortfolioLayoutProps) {
           </div>
         </motion.header>
 
-        {/* Sidebar */}
         <PortfolioSidebar />
 
-        {/* Main Content */}
         <main className="flex-1 overflow-auto pt-16 md:pt-0">
           <motion.div
             initial={{ opacity: 0 }}
