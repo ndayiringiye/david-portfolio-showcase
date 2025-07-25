@@ -43,7 +43,6 @@ export function PortfolioSidebar() {
     <Sidebar className="border-r-0">
       <SidebarContent className="bg-gradient-surface border-r border-border/50">
         <div className="p-6">
-          {/* Profile Section */}
           <motion.div 
             className="flex flex-col items-center mb-8"
             initial={{ opacity: 0, y: 20 }}
@@ -80,7 +79,6 @@ export function PortfolioSidebar() {
             )}
           </motion.div>
 
-          {/* Navigation */}
           <SidebarGroup>
             <SidebarGroupContent>
               <SidebarMenu className="space-y-2">
@@ -110,7 +108,6 @@ export function PortfolioSidebar() {
                         )}
                       </motion.div>
                       
-                      {/* Active indicator */}
                       {activeItem === item.id && (
                         <motion.div
                           className="absolute right-2 w-2 h-2 bg-primary rounded-full"
@@ -125,7 +122,6 @@ export function PortfolioSidebar() {
             </SidebarGroupContent>
           </SidebarGroup>
 
-          {/* Status Footer */}
           {!collapsed && (
             <motion.div 
               className="absolute bottom-6 left-6 right-6"

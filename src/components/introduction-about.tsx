@@ -30,7 +30,6 @@ const IntroductionAbout = () => {
 
   return (
     <div className="flex-1 p-8 space-y-8">
-      {/* Introduction Section */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -51,7 +50,6 @@ const IntroductionAbout = () => {
         </motion.div>
       </motion.div>
 
-      {/* Services Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => (
           <PortfolioCard
@@ -66,7 +64,6 @@ const IntroductionAbout = () => {
               {service.description}
             </PortfolioCardDescription>
             
-            {/* Technology Tags */}
             <div className="flex flex-wrap gap-2 mt-4">
               {service.technologies.map((tech) => (
                 <motion.span
@@ -84,7 +81,6 @@ const IntroductionAbout = () => {
         ))}
       </div>
 
-      {/* Call to Action */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

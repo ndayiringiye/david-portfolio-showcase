@@ -34,7 +34,6 @@ export const PortfolioCard = ({
         className
       )}
     >
-      {/* Image Section */}
       {imgSrc && (
         <div className="relative overflow-hidden">
           <img 
@@ -46,9 +45,7 @@ export const PortfolioCard = ({
         </div>
       )}
       
-      {/* Content Section */}
       <div className="p-6 relative">
-        {/* Background decoration */}
         <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-primary opacity-5 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700" />
         
         <div className="relative z-10">
@@ -56,7 +53,6 @@ export const PortfolioCard = ({
         </div>
       </div>
       
-      {/* Glow effect on hover */}
       <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none" />
     </motion.div>
   );
